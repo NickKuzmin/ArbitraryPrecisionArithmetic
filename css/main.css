@@ -1,0 +1,11 @@
+.main-container {
+    width: 500px; margin: 5px auto 0 auto;
+}
+
+.arithmetic-selector {
+    height: 20px;
+}
+
+#resultInput {
+    margin-left: 27px;
+}

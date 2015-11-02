@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Длинная арифметика [Кузьмин Никита]</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/arbitrary-precision-arithmetic-library.js"></script>
+    <script src="js/input-validation.js"></script>
+</head>
+<body>
+    <div class="panel panel-default main-container">
+        <div class="panel-heading">
+            Длинная арифметика
+        </div>
+        <div class="panel-body">
+            <ul>
+                <li>
+                    Необходимо ввести в оба текстбокса - целые числа (отрицательные - со знаком).
+                </li>
+                <li>
+                    Присутствует валидация на ввод данных + regex шаблон ввода отрицательного числа.
+                </li>
+            </ul>
+
+            <hr>
+
+            <label> Первое число: <input type="text" id="firstNumberInput" onKeyPress="validateInputData(event, this);">
+            </label>
+
+            <div class="arithmetic-selector">
+                <select id="arithmetic-operation-selector">
+                    <option value="subtraction">Вычесть</option>
+                    <option value="multiplication">Умножить</option>
+                </select>
+            </div>
+
+            <label>Второе число: <input type="text" id="secondNumberInput" onKeyPress="validateInputData(event, this);"></label>
+
+            <div>
+
+            </div>
+            <div>
+                 <label>Результат: <input type="text" id="resultInput"></label>
+            </div>
+            <button onclick="onResultButtonClick();">Получить результат </button>
+        </div>
+    </div>
+</body>
+</html>
